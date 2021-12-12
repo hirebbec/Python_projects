@@ -77,7 +77,7 @@ def cycle(phi):
 
     return phi
 
-image = Image.open("kotenok.jpg")
+image = Image.open("test.jpg")
 
 draw = ImageDraw.Draw(image)
 width = image.size[0]
@@ -100,9 +100,9 @@ for i in range(width):
 			a, b, c = 0, 0, 0
 		draw1.point((i, j), (a, b, c))
 im.show()
-im.save("newkotenok.png")
+im.save("newtest.png")
 
-arr = np.array(Image.open("newkotenok.png"))
+arr = np.array(Image.open("newtest.png"))
 n = arr.shape[0]
 m = arr.shape[1]
 l = arr.shape[2]
